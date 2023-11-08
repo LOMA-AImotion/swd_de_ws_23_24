@@ -1,0 +1,62 @@
+(base) C:\Users\Schiendorfer>python
+Python 3.8.18 (default, Sep 11 2023, 13:39:12) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> menge = {}
+>>> menge.add(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'add'
+>>> type({})
+<class 'dict'>
+>>> type(set())
+<class 'set'>
+>>> registrierungen = [("John", "München"), ("Ada", "München"), ("Nina", "Ingolstadt"), ("Malik", "Augsburg")]
+>>> registrierungen
+[('John', 'München'), ('Ada', 'München'), ('Nina', 'Ingolstadt'), ('Malik', 'Augsburg')]
+>>> staedte = {stadt for name, stadt in regstrierungen}
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'regstrierungen' is not defined
+>>> staedte = {stadt for name, stadt in registrierungen}
+>>> staedte
+{'Augsburg', 'München', 'Ingolstadt'}
+>>> menge = {1, 2, 2, 3}
+>>> menge
+{1, 2, 3}
+>>> {"A", "A", "B"}
+{'A', 'B'}
+>>> []
+[]
+>>> ()
+()
+>>> {}
+{}
+>>> type({})
+<class 'dict'>
+>>> type(set())
+<class 'set'>
+>>> type([])
+<class 'list'>
+>>> type(())
+<class 'tuple'>
+>>> type({})
+<class 'dict'>
+>>> liste = ["alpha", "beta", "gamma"]
+>>> liste[::-1]
+['gamma', 'beta', 'alpha']
+>>> liste.reverse()
+>>> liste
+['gamma', 'beta', 'alpha']
+>>> int(4.6)
+4
+>>> int(4.3)
+4
+>>> int(4.9)
+4
+>>> round(4.9)
+5
+>>> round(4.5)
+4
+>>> round(4.51)
+5
+>>>
