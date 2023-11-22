@@ -31,5 +31,11 @@ nomen_pfad = os.path.join(skript_verzeichnis, "nomen.txt")
 adjektive = lese_woerter_aus_txt(adjektive_pfad)
 nomen = lese_woerter_aus_txt(nomen_pfad)
 
-print(adjektive)
-print(nomen)
+fortsetzen = True
+from pw_logik import generiere_passwort
+
+while fortsetzen :
+    print("Generiere Passwort ...")
+    passwort = generiere_passwort(adjektive, nomen)
+    print(passwort)
+    fortsetzen = input("Fortsetzen? (j|n)") == "j"
